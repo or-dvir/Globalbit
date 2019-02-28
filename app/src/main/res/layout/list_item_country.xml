@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_countryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="name (native name)"
+        app:layout_constraintHorizontal_bias="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toStartOf="@+id/iv_countryFlag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_countryCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="capital"
+        app:layout_constraintStart_toStartOf="@+id/tv_countryName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_countryName" />
+
+    <ImageView
+        android:id="@+id/iv_countryFlag"
+        android:layout_width="@dimen/flag"
+        android:layout_height="@dimen/flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_countryName" />
+
+</android.support.constraint.ConstraintLayout>

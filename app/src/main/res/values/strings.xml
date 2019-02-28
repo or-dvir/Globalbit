@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Globalbit</string>
+    <string name="capital">Capital:</string>
+    <string name="someError">Some Error Occurred</string>
+    <string name="boarders">Boarders</string>
+    <string name="noBorders">No Borders Found</string>
+    <string name="errorLoadingBorder">Error Loading Border</string>
+</resources>
